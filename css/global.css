@@ -1,0 +1,34 @@
+/* Variables */
+:root {
+	--navbar-height: 100px;
+	--navbar-padding: 10px;
+
+	--border-color: #0003;
+
+	--footer-padding: 10px;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap');
+html {
+	font-family: 'Barlow', sans-serif;
+}
+
+/* Sans media */
+
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 10px;
+	}
+}
+
+/* PC */
+@media screen and ( min-width: 601px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 40px;
+	}
+}
