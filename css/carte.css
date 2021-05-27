@@ -1,0 +1,49 @@
+body {
+	background: url( "../img/hero/sushiBG.jpg" );
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.products > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.products > ul > li {
+	padding: 0 15px;
+}
+
+figure > img {
+	display: block;
+	max-width: 150px;
+	min-height: 150px;
+}
+
+.sous-category {
+	display : none
+}
+
+#main {
+    display: block;
+}
+
+#main h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2rem;
+}
+
+#main span {
+    /* font-size: .9375rem;
+    line-height: 1.125rem;
+    min-height: 40px; */
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+}
+
+#main li {
+    width: 150px;
+}
