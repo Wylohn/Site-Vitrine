@@ -8,14 +8,14 @@
 	--footer-padding: 10px;
 }
 
-.listing-menu-wapper {
+/* .listing-menu-wapper {
 	position: fixed;
 	text-align: center;
 	width: 300px;
 	top: var(--navbar-height);
 	bottom: 0 ;
 	background-color: black;
-}
+} */
 
 .listing-menu {
 	position: relative;
