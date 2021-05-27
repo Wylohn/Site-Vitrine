@@ -96,9 +96,35 @@ figure > img {
 /* Hero */
 /* Call to action btn */
 .right > span > a{
-	text-decoration: none;
 	display: flex;
+	flex-direction: column;
+  	padding: 0.85em 1.5em;
+  	font-size: 1.5em;
+  	text-decoration: none;
+  	color: #ffffff;
+  	background-color: #57A1B7;
+  	border: none;
+  	border-radius: 0.62em;
+	margin:10px;
 }
+
+.right > span > a:hover{
+	background-color: white;
+	opacity: 0.4;
+	color:black !important;
+}
+
+.right{
+	padding-left: 10px;
+	flex-direction: column;
+	column-gap: 20px;
+}
+
+.left {
+	padding-right: 10px;
+}
+
+/* Text */
 
 .info {
 	display:flex;
@@ -107,7 +133,15 @@ figure > img {
 .left > ul{
 	display:flex;
 	flex-direction: column;
-	align-items: flex-start;
+}
+
+.left > ul > li{
+	display:flex;
+	
+}
+
+.texthaut {
+	padding-bottom: 10px;
 }
 
 /* Smartphone */
