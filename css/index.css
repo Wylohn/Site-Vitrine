@@ -93,9 +93,25 @@ figure > img {
 	display : none
 }
 
+/* Hero */
+/* Call to action btn */
+.right > span > a{
+	text-decoration: none;
+	display: flex;
+}
+
+.info {
+	display:flex;
+}
+
+.left > ul{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 /* Smartphone */
 @media screen and ( max-width: 600px ) {
-
 }
 
 /* PC */
