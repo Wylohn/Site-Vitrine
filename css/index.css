@@ -1,14 +1,12 @@
 /* Sans media */
 /* Hero */
 
-body {
+
+#hero {
 	background: url( "../img/hero/sushiBG.jpg" );
 	background-size: cover;
 	background-position: center center;
-	background-attachment: fixed;
-}
-
-#hero {
+	/* background-attachment: fixed; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -32,27 +30,7 @@ body {
 	color: inherit;
 }
 
-.listing-menu-wapper {
-	position: fixed;
-	text-align: center;
-	width: 300px;
-}
 
-.listing-menu {
-	position: relative;
-	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-align: left;
-	font-size: 2em;
-	color: white;
-	box-sizing: border-box;
-	line-height: 1.5em;
-}
-
-ul {
-	list-style-type: none;
-}
 
 /* Main */
 #main {
