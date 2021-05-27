@@ -93,9 +93,59 @@ figure > img {
 	display : none
 }
 
+/* Hero */
+/* Call to action btn */
+.right > span > a{
+	display: flex;
+	flex-direction: column;
+  	padding: 0.85em 1.5em;
+  	font-size: 1.5em;
+  	text-decoration: none;
+  	color: #ffffff;
+  	background-color: #E7C56B;
+  	border: none;
+  	border-radius: 0.62em;
+	margin:10px;
+}
+
+.right > span > a:hover{
+	background-color: white;
+	opacity: 0.4;
+	color:black !important;
+}
+
+.right{
+	padding-left: 10px;
+	flex-direction: column;
+	column-gap: 20px;
+}
+
+.left {
+	padding-right: 10px;
+}
+
+/* Text */
+
+.info {
+	display:flex;
+}
+
+.left > ul{
+	display:flex;
+	flex-direction: column;
+}
+
+.left > ul > li{
+	display:flex;
+	
+}
+
+.texthaut {
+	padding-bottom: 10px;
+}
+
 /* Smartphone */
 @media screen and ( max-width: 600px ) {
-
 }
 
 /* PC */
