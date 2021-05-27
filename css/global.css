@@ -8,6 +8,29 @@
 	--footer-padding: 10px;
 }
 
+.listing-menu-wapper {
+	position: fixed;
+	text-align: center;
+	width: 300px;
+}
+
+.listing-menu {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+	font-size: 2em;
+	color: white;
+	box-sizing: border-box;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap');
 html {
