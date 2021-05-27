@@ -12,6 +12,9 @@
 	position: fixed;
 	text-align: center;
 	width: 300px;
+	top: var(--navbar-height);
+	bottom: 0 ;
+	background-color: black;
 }
 
 .listing-menu {
