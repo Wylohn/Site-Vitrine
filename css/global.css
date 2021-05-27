@@ -8,30 +8,8 @@
 	--footer-padding: 10px;
 }
 
-/* .listing-menu-wapper {
-	position: fixed;
-	text-align: center;
-	width: 300px;
-	top: var(--navbar-height);
-	bottom: 0 ;
-	background-color: black;
-} */
 
-.listing-menu {
-	position: relative;
-	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-align: left;
-	font-size: 2em;
-	color: white;
-	box-sizing: border-box;
-	line-height: 1.5em;
-}
 
-ul {
-	list-style-type: none;
-}
 
 
 /* Font */
