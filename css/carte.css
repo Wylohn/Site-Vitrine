@@ -15,6 +15,9 @@ body:before{
     z-index: -1;
 } */
 
+
+/* Menu déroulant */
+
 .listing-menu {
     display: block;
 	position: fixed;
@@ -37,6 +40,8 @@ ul {
 
 }
 
+
+/* Hero */
 
 .listing-title {
     position: fixed;
@@ -100,6 +105,63 @@ ul {
     font-size: 3.75rem;
 }
 
+/* Panier */
+
+.container-panier {
+    display: block;
+    position: fixed;
+    right: 5px;
+    width: 320px;
+    padding-top: 30px;
+    margin: 0;
+    box-sizing: inherit;
+    top: 400px;
+}
+
+.panier {
+    position: relative;
+    padding-left: 50px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.title-panier {
+    display: inline-block;
+    font-size: 1.5625rem;
+    color: #b4a895;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.1;
+    padding: 0;
+    border: 0;
+    }
+
+.empty-panier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Produits */
+
+.container-products {
+    position: relative;
+    padding-left: 190px;
+    padding-right: 320px;
+    width: auto;
+    margin: 0 15%;
+    padding: 0;
+    border: 0;
+}
+
+
 .products > ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -107,7 +169,7 @@ ul {
 }
 
 .products > ul > li {
-	padding: 0 15px;
+	padding: 15px 15px;
 }
 
 figure > img {
@@ -122,6 +184,7 @@ figure > img {
 
 #main {
     display: block;
+    margin-top: 350px;
 }
 
 #main h1 {
