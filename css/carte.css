@@ -22,7 +22,7 @@ body:before{
     display: block;
 	position: fixed;
 	line-height: 1.5em;
-    padding: 25px 0 0;
+    padding: 0;
     width: 190px;
     left: 5%;
     box-sizing: inherit;
@@ -37,7 +37,11 @@ body:before{
 
 ul {
 	list-style-type: none;
+}
 
+a {
+    text-decoration: none;
+    color: red;
 }
 
 
@@ -58,7 +62,6 @@ ul {
 .listing-title .bg {
     height: 100%;
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -178,14 +181,28 @@ figure > img {
 	min-height: 150px;
 }
 
+figure > .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info > span {
+    padding: 0 10px;
+}
+
 .sous-category {
 	display : none
 }
 
 #main {
     display: block;
-    margin-top: 350px;
+    margin-top: 330px;
 }
+
+/* .container-products {
+    padding-top: 20px;
+} */
 
 #main h1 {
     text-align: center;
