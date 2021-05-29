@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<!-- Contact -->
 	<link rel="stylesheet" href="css/contact.css">
+	<!-- Fontawesome-->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -40,19 +42,20 @@
 	</header>
 
 	<section class="wrapper">
-		<form class="contact-form" method="GET">
+		<div id="error"></div>
+		<form id="form" class="contact-form" method="GET" name="myForm">
 			<div class="input-fields">
-				<input type="text" name="name" class="input" placeholder="Name" id="data">
-				<input type="text" name="email" class="input" placeholder="Email Address" id="data">
-				<input type="phone" name="phone" class="input" placeholder="Phone" id="data">
-				<select name="message" id="data">
+				<input type="text" name="name" class="input" placeholder="Name" id="name">
+				<input type="text" name="email" class="input" placeholder="Email Address" id="email">
+				<input type="phone" name="phone" class="input" placeholder="Phone" id="phone">
+				<select name="message" id="message">
 					<option value="">Types de message</option>
 					<option value="recrutement">Recrutement</option>
 					<option value="autre">Autre</option>
 				</select>
 			</div>
 			<div class="comment">
-				<textarea name="comment" placeholder="Message" id="data"></textarea>
+				<textarea name="comment" placeholder="Message" id="text"></textarea>
 				<div class="btn"><input type="submit"></div>
 			</div>
 		</form>

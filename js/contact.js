@@ -3,6 +3,7 @@ const inputs = document.querySelectorAll('.contact-form input, .contact-form sel
 const bouton = document.querySelector('.wrapper')
 const confirma = document.querySelector('.remerciement')
 
+
 form.addEventListener('submit', handleSubmit);
 bouton.addEventListener('submit', confirmation);
 
@@ -28,3 +29,4 @@ function confirmation(){
 }
 
 console.log(inputs);
+
