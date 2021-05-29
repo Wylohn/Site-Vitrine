@@ -42,12 +42,11 @@
 	</header>
 
 	<section class="wrapper">
-		<div id="error"></div>
 		<form id="form" class="contact-form" method="GET" name="myForm">
 			<div class="input-fields">
-				<input type="text" name="name" class="input" placeholder="Name" id="name">
-				<input type="text" name="email" class="input" placeholder="Email Address" id="email">
-				<input type="phone" name="phone" class="input" placeholder="Phone" id="phone">
+				<input type="text" name="name" class="input" placeholder="Name" id="name" required>
+				<input type="text" name="email" class="input" placeholder="Email Address" id="email" required>
+				<input type="phone" name="phone" class="input" placeholder="Phone" id="phone" required>
 				<select name="message" id="message">
 					<option value="">Types de message</option>
 					<option value="recrutement">Recrutement</option>
@@ -55,7 +54,7 @@
 				</select>
 			</div>
 			<div class="comment">
-				<textarea name="comment" placeholder="Message" id="text"></textarea>
+				<textarea name="comment" placeholder="Message" id="text" required></textarea>
 				<div class="btn"><input type="submit"></div>
 			</div>
 		</form>
