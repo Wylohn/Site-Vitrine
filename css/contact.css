@@ -136,6 +136,8 @@ form {
 	letter-spacing:4px;
 }
 
+
+
 @media screen and (max-width:600px){
 	.contact-form{
 		flex-direction:column;

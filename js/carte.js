@@ -92,3 +92,4 @@ var addProductToCart = function (productId) {
 
     refreshCart();
 }
+

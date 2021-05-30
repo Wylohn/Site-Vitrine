@@ -81,14 +81,14 @@ var refreshCartPage = function(){
                 '<img src="img/bouffe/'+ product.image +'" alt="">' +
                 '<div>' +
                 '<p>'+ product.name +'</p>' +
-                '<small>Price: $'+ product.price +'</small>' +
+                '<small>Price: €'+ product.price +'</small>' +
                 '<br>' +
                 '<button onclick="deleteProductFromCart('+ product.id +')" class="danger">Supprimer</a>' +
                 '</div>' +
                 '</div>' +
                 '</td>' +
                 '<td><input min="1" max="9" type="number" onchange="updateCartQuantity(event, '+ product.id +')" value="'+ product.amount +'"></td>' +
-                '<td>$'+ (product.amount * product.price).toFixed(2) +'</td>' +
+                '<td>€'+ (product.amount * product.price).toFixed(2) +'</td>' +
                 '</tr>'
         })
     }
@@ -97,9 +97,9 @@ var refreshCartPage = function(){
 
     var totalValue = getSubtotalValue() + taxValue;
 
-    document.querySelector('.subtotal-value').innerHTML = '$'+getSubtotalValue().toFixed(2)
-    document.querySelector('.tax-value').innerHTML = '$'+taxValue.toFixed(2)
-    document.querySelector('.total-value').innerHTML = '$'+totalValue.toFixed(2)
+    document.querySelector('.subtotal-value').innerHTML = '€'+getSubtotalValue().toFixed(2)
+    document.querySelector('.tax-value').innerHTML = '€'+taxValue.toFixed(2)
+    document.querySelector('.total-value').innerHTML = '€'+totalValue.toFixed(2)
 }
 
 refreshCartPage();
