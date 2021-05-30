@@ -16,6 +16,40 @@ body:after{
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
+    z-index: -1;
+}
+
+.confirmed{
+	display:none;
+}
+
+.remerciement{
+	display:none;
+}
+
+.texte-remerciement{
+	max-width:550px;
+	margin:0 auto;
+	background:rgba(0,0,0,0.8);
+	padding:30px;
+	border-radius:5px;
+	display:flex;
+	flex-direction: column;
+	box-shadow: 0 0 10px rgba(0,0,0,0.13);
+	width:100%;
+}
+
+.actif{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 50px;
+	height: calc( 100vh - var( --navbar-height ) );
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 3px var( --border-color );
+	width:100%;
 }
 
 nav{
@@ -96,7 +130,7 @@ th:last-child{
     text-align:right;
 }
 
-span{
+.button-wrapper{
     display:block;
     position:absolute;
     background:#81674B;
@@ -110,13 +144,13 @@ span{
     left: 509px;
 }
 
-span > a{
+.button-wrapper a {
     text-decoration: none;
     color:#fff;
 }
 
-span > a:hover{
-	background-color: white;
+.button-wrapper a::after{
+    background-color: white;
 	opacity: 0.4;
 	color:black !important;
 }
