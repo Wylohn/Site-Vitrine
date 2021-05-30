@@ -21,10 +21,20 @@ body:after{
 nav{
     background-color:black !important;
     color:gold;
+    justify-content: center !important;
+}
+
+.small-container{
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,0.6);
+    width: 35%;
 }
 
 cart-page{
-margin:80px auto;
+    margin:80px auto;
 }
 
 table{
@@ -80,7 +90,33 @@ td img{
 
 td:last-child{
     text-align:right;
+
 }
 th:last-child{
     text-align:right;
+}
+
+span{
+    display:block;
+    position:absolute;
+    background:#81674B;
+	text-align:center;
+	padding:15px;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	width: 20%;
+    left: 509px;
+}
+
+span > a{
+    text-decoration: none;
+    color:#fff;
+}
+
+span > a:hover{
+	background-color: white;
+	opacity: 0.4;
+	color:black !important;
 }
