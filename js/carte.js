@@ -1,10 +1,3 @@
-//Global things
-var selectedProducts = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
-
-var saveLocalStorage = function(){
-    localStorage.setItem('cart', JSON.stringify(selectedProducts));
-}
-
 categories.forEach(category => {
     var productsContainer = document.querySelector('.products')
 
@@ -91,44 +84,3 @@ var addProductToCart = function(productId){
 
     refreshCart();
 }
-
-var deleteProductFromCart = function(productId){
-    var existingProduct = selectedProducts.find(product => product.id == productId);
-
-    if(existingProduct){
-        var indexToRemove = selectedProducts.indexOf(existingProduct);
-
-        selectedProducts.splice(indexToRemove, 1);
-
-        console.log(selectedProducts);
-    }
-
-    refreshCart()
-}
-
-var refreshCart = function(){
-    saveLocalStorage();
-    refreshAsideCart()
-}
-
-var refreshAsideCart = function(){
-    var asideCartElement = document.querySelector('.aside-cart-products-container');
-
-    if(asideCartElement){
-        asideCartElement.innerHTML = '';
-        if(!selectedProducts.length){
-
-            asideCartElement.innerHTML = '<div class="empty-panier">' +
-                '<span>Panier vide</span>' +
-                '</div>'
-
-         return;
-        }
-
-        selectedProducts.forEach(cartProduct => {
-            asideCartElement.innerHTML += '<div onclick="deleteProductFromCart('+ cartProduct.id +')">'+cartProduct.name+'</div>'
-        })
-    }
-}
-
-refreshAsideCart();
