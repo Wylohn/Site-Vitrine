@@ -114,8 +114,8 @@ a {
     display: block;
     position: fixed;
     right: 0;
-    width: 320px;
-    height: 100%;
+    width: 20%;
+    height: auto;
     margin: 0;
     box-sizing: inherit;
     top: 350px;
@@ -153,14 +153,22 @@ a {
     border: 0;
 }
 
-/* Produits */
-
-.ancor {
-    display: block;
-    top: -400px;
-    position: relative;
-    visibility: hidden;
+.cart-info {
+    display: flex;
+    flex-direction: row;
 }
+
+.cart-info > img {
+    width: 150px;
+    height: 100px;
+    padding: 10px 5px
+}
+
+.info-selected {
+    padding-top: 30px;
+}
+
+/* Produits */
 
 .container-products {
     position: relative;
