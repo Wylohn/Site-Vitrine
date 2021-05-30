@@ -1,10 +1,7 @@
-
 const bouton = document.querySelector('.cta-button')
 console.log(bouton);
 const confirma = document.querySelector('.remerciement')
 const wrapper = document.querySelector('.small-container')
-
-
 
 bouton.addEventListener('click', confirmation);
 
@@ -13,13 +10,30 @@ function confirmation(){
     confirma.classList.add('actif')
 }
 
-var removeBtn = document.querySelectorAll('.danger')
-console.log(removeBtn);
+var removeButtons = document.querySelectorAll('.danger')
 
-for (var i = 0 < removeBtn.length; i++){
-    var button = removeBtn[i]
-    button.addEventListener('click', function(event){
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
+removeButtons.forEach(removeButton => {
+    removeButton.addEventListener('click', function(event){
+        event.preventDefault()
+        removeButton.closest('tr').remove()
     })
+})
+const bouton = document.querySelector('.cta-button')
+const confirma = document.querySelector('.remerciement')
+const wrapper = document.querySelector('.small-container')
+
+bouton.addEventListener('click', confirmation);
+
+function confirmation(){
+    wrapper.classList.add('confirmed')
+    confirma.classList.add('actif')
 }
+
+var removeButtons = document.querySelectorAll('.danger')
+
+removeButtons.forEach(removeButton => {
+    removeButton.addEventListener('click', function(event){
+        event.preventDefault()
+        removeButton.closest('tr').remove()
+    })
+})
