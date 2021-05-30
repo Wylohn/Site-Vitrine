@@ -22,7 +22,7 @@ body:before{
     display: block;
 	position: fixed;
 	line-height: 1.5em;
-    padding: 25px 0 0;
+    padding: 50px 0;
     width: 190px;
     left: 5%;
     box-sizing: inherit;
@@ -37,7 +37,11 @@ body:before{
 
 ul {
 	list-style-type: none;
+}
 
+a {
+    text-decoration: none;
+    color: red;
 }
 
 
@@ -45,7 +49,7 @@ ul {
 
 .listing-title {
     position: fixed;
-    height: 320px;
+    height: 200px;
     width: 100%;
     z-index: 2;
     background-size: cover;
@@ -58,7 +62,6 @@ ul {
 .listing-title .bg {
     height: 100%;
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -110,12 +113,13 @@ ul {
 .container-panier {
     display: block;
     position: fixed;
-    right: 5px;
+    right: 0;
     width: 320px;
-    padding-top: 30px;
+    height: 100%;
     margin: 0;
     box-sizing: inherit;
-    top: 400px;
+    top: 350px;
+    border: 1px solid;
 }
 
 .panier {
@@ -151,6 +155,13 @@ ul {
 
 /* Produits */
 
+.ancor {
+    display: block;
+    top: -400px;
+    position: relative;
+    visibility: hidden;
+}
+
 .container-products {
     position: relative;
     padding-left: 190px;
@@ -178,13 +189,55 @@ figure > img {
 	min-height: 150px;
 }
 
+figure > .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info > span {
+    padding: 0 10px;
+}
+
+.ajout {
+    display: flex;
+    justify-content: center;
+}
+
+.button-ajouter {
+    width: 100px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: #93826f;
+    margin: 10px 0 ;
+}
+
+.moins {
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.plus {
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+
+
 .sous-category {
 	display : none
 }
 
 #main {
     display: block;
-    margin-top: 350px;
+    margin-top: 200px;
+    padding-top: 1px;
+    background: url("../img/content/ardoise.jpg");
+    background-size: cover;
 }
 
 #main h1 {
