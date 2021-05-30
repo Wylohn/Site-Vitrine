@@ -51,7 +51,7 @@ var products = [
     {
         "id": 8,
         "name": "Crevette",
-        "price": 5,
+        "price": 4.5,
         "image": "maki-crevette.jpg",
         "category_id": 2
     },
@@ -65,35 +65,35 @@ var products = [
     {
         "id": 10,
         "name": "Saumon",
-        "price": 4,
+        "price": 4.5,
         "image": "maki-saumon.jpg",
         "category_id": 2
     },
     {
         "id": 11,
         "name": "Thon",
-        "price": 5.5,
+        "price": 4.5,
         "image": "maki-thon.jpg",
         "category_id": 2
     },
     {
         "id": 12,
         "name": "Printemps saumon avocat",
-        "price": 4.5,
+        "price": 6,
         "image": "maki-printemps-saumon-avocat.jpg",
         "category_id": 2
     },
     {
         "id": 13,
         "name": "Printemps surimi avocat",
-        "price": 4,
+        "price": 6,
         "image": "maki-printemps-surimi-avocat.jpg",
         "category_id": 2
     },
     {
         "id": 14,
         "name": "Printemps thon avocat",
-        "price": 4.5,
+        "price": 6,
         "image": "maki-printemps-thon-avocat.jpg",
         "category_id": 2
     },

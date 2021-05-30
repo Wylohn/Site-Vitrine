@@ -29,6 +29,7 @@ categories.forEach(category => {
             "<span onclick='incrementProductNumber(" + product.id + ")'>+</span>" +
             "</div>" +
             "</div>" +
+            "<span class=\"price\">€ "+ product.price +"  </span>" +
             "<div class=\"ajout\">" +
             "<div class=\"button-ajouter\">" +
             "<span class=\"ajouter\" onclick='addProductToCart(" + product.id + ")'>Ajouter</span>" +
