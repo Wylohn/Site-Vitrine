@@ -47,7 +47,16 @@ var refreshAsideCart = function(){
         }
 
         selectedProducts.forEach(cartProduct => {
-            asideCartElement.innerHTML += '<div onclick="deleteProductFromCart('+ cartProduct.id +')">'+cartProduct.name+'</div>'
+            asideCartElement.innerHTML += '<div onclick="deleteProductFromCart('+ cartProduct.id +')">'+
+            '<div class="cart-info">' +
+            '<img src="img/bouffe/'+ cartProduct.image +'" alt="">' +
+            '<div class="info-selected">' +
+            '<span>' + cartProduct.name +'</span>' +
+            '<span> € ' + cartProduct.price +'</span>' +
+            '<span> x ' + cartProduct.amount +'</span>' +
+            '</div>'+
+            '</div>'+
+            '</div>'
         })
     }
 }
