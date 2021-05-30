@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ls-a - Loutres super-agréables</title>
+	<title>Contact</title>
 	<!-- Css reset -->
 	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 	<!-- Global -->
@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="css/navbar.css">
 	<!-- Footer -->
 	<link rel="stylesheet" href="css/footer.css">
+	<!-- Contact -->
+	<link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
@@ -20,7 +22,7 @@
 		<nav>
 			<!-- Icone -->
 			<a href="index.html" title="page d'accueil">
-				<img src="img/logo/logo_black.png" alt="logo ls-a">
+				<img src="img/logo/Kim-Sushi.png" alt="logo-kim-sushi">
 			</a>
 
 			<!-- menu burger -->
@@ -36,6 +38,32 @@
 		</nav>
 
 	</header>
+
+	<section class="wrapper">
+		<form id="form" class="contact-form" method="GET" name="myForm">
+			<div class="input-fields">
+				<input type="text" name="name" class="input" placeholder="Name" id="name" required>
+				<input type="text" name="email" class="input" placeholder="Email Address" id="email" required>
+				<input type="phone" name="phone" class="input" placeholder="Phone" id="phone" required>
+				<select name="message" id="message">
+					<option value="">Types de message</option>
+					<option value="recrutement">Recrutement</option>
+					<option value="autre">Autre</option>
+				</select>
+			</div>
+			<div class="comment">
+				<textarea name="comment" placeholder="Message" id="text" required></textarea>
+				<div class="btn"><input type="submit"></div>
+			</div>
+		</form>
+	</section>
+
+	<section class="remerciement">
+		<div class="texte-remerciement">
+			<h2>Merci à vous !</h2>
+			<span>Votre prise d'informations a bien été prise en compte. Vous allez recevoir un e-mail dans les plus brefs délais.</span>
+		</div>
+	</section>
 
 	<!-- Footer -->
 	<footer>
@@ -57,7 +85,7 @@
 		</section>
 	</footer>
 	
-	<!-- JS global -->
-	<script src="js/script.js"></script>
+	<!-- JS contact -->
+	<script src="js/contact.js"></script>
 </body>
 </html>

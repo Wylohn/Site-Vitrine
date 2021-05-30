@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kim Sushi - Panier</title>
+	<title>Panier</title>
 	<!-- Css reset -->
 	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 	<!-- Global -->
@@ -12,57 +12,108 @@
 	<link rel="stylesheet" href="css/navbar.css">
 	<!-- Footer -->
 	<link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-
-	<header>
-		<!-- Navbar -->
-		<nav>
-			<!-- Icone -->
-			<a href="index.html" title="page d'accueil">
-				<img src="img/logo/Kim-Sushi.png" alt="logo Kim Sushi">
-			</a>
-
-			<!-- menu burger -->
-			<img src="img/logo/menu.svg" alt="menu">
-
-			<!-- Liste liens -->
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="carte.html">Carte</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="panier.html" class="active">Panier</a></li>
-			</ul>
-		</nav>
-
-	</header>
-
-	<!-- Main -->
-	<main>
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, velit odio? Unde libero harum vitae beatae cumque suscipit, quidem rerum soluta saepe hic? Ullam adipisci unde aliquam! Earum, officia perferendis!
-	</main>
-
-	<!-- Footer -->
-	<footer>
-		<!-- Adresse -->
-		<section>
-			<p>Kim Sushi</p>
-			<p>48 Avenue Victor Hugo</p>
-			<p>93320 Les Pavillons sous bois</p>
-		</section>
-		<!-- Réseaux sociaux -->
-		<section>
-			<a href="https://fb.me/lsa360" title="facebook ls-a"><img src="img/socials/facebook.png" alt="logo Facebook"></a>
-			<a href="https://instagram.com/lsa360" title="instagram ls-a"><img src="img/socials/instagram.png" alt="logo Instagram"></a>
-			<a href="https://linkedin.com/company/ls-a" title="linkedin ls-a"><img src="img/socials/linkedin.png" alt="logo Linkedin"></a>
-		</section>
-		<!-- Mentions légales -->
-		<span>Copyright 2021 Kim Sushi</span>
-		<section>
-		</section>
-	</footer>
+	<!--Panier-->
+	<link rel="stylesheet" href="css/panier.css">
 	
-	<!-- JS global -->
-	<script src="js/script.js"></script>
+	
+	
+</head>
+<header>
+	<nav>
+		<!-- Liste liens -->
+		<ul>
+			<li><a href="carte.html">Retour</a></li>
+		</ul>
+	</nav>
+	</header>
+<body>
+	
+<div class="small-container cart-page">
+	<table id="myTable">
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Subtotal</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="img/bouffe/california-crevette.jpg" alt="">
+					<div>
+						<p>California Crevette</p>
+						<small>Price: 50$</small>
+						<br>
+						<a href="" class="danger">Supprimer</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>$50</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="img/bouffe/california-crevette.jpg" alt="">
+					<div>
+						<p>California Crevette</p>
+						<small>Price: 50$</small>
+						<br>
+						<a href="" class="danger">Supprimer</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>$50</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="img/bouffe/california-crevette.jpg" alt="">
+					<div>
+						<p>California Crevette</p>
+						<small>Price: 50$</small>
+						<br>
+						<a href="" class="danger">Supprimer</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>$50</td>
+		</tr>
+	</table>
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>150$</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td>50$</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>200$</td>
+				</tr>
+			</table>
+		
+		</div>
+	</table>
+	<div class="button-wrapper">
+		<a type="submit" class="button cta-button" href="#0">CONFIRMER</a>
+	</div>
+	
+</div>
+<section class="remerciement">
+	<div class="texte-remerciement">
+		<h2>Merci pour votre commande</h2>
+		<span>Votre prise d'informations a bien été prise en compte. Vous allez recevoir un e-mail dans les plus brefs délais.</span>
+	</div>
+</section>
+</div>
+	
+	
+	<!-- JS panier -->
+	<script src="js/panier.js"></script>
 </body>
 </html>

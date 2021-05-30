@@ -1,0 +1,149 @@
+.wrapper {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 50px;
+	height: calc( 100vh - var( --navbar-height ) );
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 3px var( --border-color );
+	width:100%;
+}
+
+.confirmed{
+	display:none;
+}
+
+.remerciement{
+	display:none;
+}
+
+.actif{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 50px;
+	height: calc( 100vh - var( --navbar-height ) );
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 3px var( --border-color );
+	width:100%;
+}
+
+.texte-remerciement{
+	max-width:550px;
+	margin:0 auto;
+	background:rgba(0,0,0,0.8);
+	padding:30px;
+	border-radius:5px;
+	display:flex;
+	flex-direction: column;
+	box-shadow: 0 0 10px rgba(0,0,0,0.13);
+	width:100%;
+}
+
+.texte-remerciement h2{
+	font-weight: bold;
+	padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.texte-remerciement span{
+	padding-bottom: 5px;
+}
+
+body{
+    background: url( "../img/hero/contact.jpg" );
+	background-position: center center;
+    background-size: cover;
+}
+
+footer{
+    background-color: white;
+}
+
+.contact-form{
+	max-width:550px;
+	margin:0 auto;
+	background:rgba(0,0,0,0.8);
+	padding:30px;
+	border-radius:5px;
+	display:flex;
+	box-shadow: 0 0 10px rgba(0,0,0,0.13);
+	width:100%;
+}
+
+.input-fields{
+	display:flex;
+	flex-direction: column;
+	margin-right: 15%;
+}
+
+select{
+	-webkit-appearance: none;
+	border-radius:3px;
+	outline:none;
+}
+
+.input-fields, select,
+.comment{
+	width:48%;
+}
+
+form {
+	display:flex;
+}
+
+.input-fields .input, select,
+.comment textarea{
+	margin:10px 0;
+	background:transparent;
+	border:0;
+	border-bottom:2px solid #81674B;
+	padding:10px;
+	color:#81674B;
+	width:100%;
+}
+
+.comment textarea{
+	height:212px;
+	resize:none;
+}
+
+::-webkit-input-placeholder{
+	color:#81674B;
+}
+
+::-moz-input-placeholder{
+	color:#81674B;
+}
+
+::ms-input-placeholder{
+	color:#81674B;
+}
+
+.btn input[type="submit"]{
+	background:#81674B;
+	text-align:center;
+	padding:15px;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	width: 60%;
+	letter-spacing:4px;
+}
+
+@media screen and (max-width:600px){
+	.contact-form{
+		flex-direction:column;
+	}
+	.comment textarea{
+		height:80px;
+	}
+	.input-fields, .comment{
+		width:100%;
+	}
+}
