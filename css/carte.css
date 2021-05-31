@@ -150,6 +150,7 @@ a, a:visited, a:active {
 }
 
 .info-selected {
+    color: #fff;
     padding-top: 30px;
 }
 

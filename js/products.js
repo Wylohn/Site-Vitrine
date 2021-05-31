@@ -31,7 +31,7 @@ var products = [
         "id": 5,
         "name": "Saumon avocat",
         "price": 4.5,
-        "image": "sushi-Saumon-avocat.jpg",
+        "image": "sushi-saumon-avocat.jpg",
         "category_id": 1
     },
     {
